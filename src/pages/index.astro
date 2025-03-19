@@ -1,58 +1,96 @@
 ---
-import Layout from "../layouts/Layout.astro";
-
+// Index.astro
 ---
 
-<Layout>
-	<div class="flex bg-amber-500 items-center justify-center h-[100px]">
-		<h1 class ='text-4xl font-medium'>
-			English Project
-		</h1>
-	</div>
-	<main class="flex bg-amber-100 justify-center gap-10 ">
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/src/styles/global.css">
+    <title>English Project-Dorantes Pedro</title>
+  </head>
+  <body class="bg-gray-900 min-h-screen font-sans text-gray-200">
+    <main class="container mx-auto px-4 py-16">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500">
+        My life, My blog.
+      </h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <a href="/vista1" class="group">
+          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700">
+            <div class="h-64 overflow-hidden">
+              <img 
+                src="/images/imagen1.jpg" 
+                alt="Descripción de la imagen 1" 
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
+              <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">Título 1</h2>
+              <p class="text-gray-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus justo eget felis aliquam, eget aliquam nunc varius.
+              </p>
+              <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
+                <span>Explorar</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
 
-<!-- card1 -->
-		<div class = 'flex flex-col justify-center bg-gray-400 w-[480px] h-[500px] rounded-[20px] mt-4 mb-4 '>
-			<a href="./About-me">
-				<div>  
-					img
-				</div>
-			</a>
-		<div>
-			<p>Aqui va el texto pequeño</p>
-		</div>
-	</div>
+        <!-- Card 2 -->
+        <a href="/vista2" class="group">
+          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/30 border border-gray-700">
+            <div class="h-64 overflow-hidden">
+              <img 
+                src="/images/imagen2.jpg" 
+                alt="Descripción de la imagen 2" 
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
+              <h2 class="text-2xl font-bold mb-3 text-violet-300 group-hover:text-violet-200">Título 2</h2>
+              <p class="text-gray-200">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+              <div class="mt-4 inline-flex items-center text-violet-300 group-hover:text-violet-200">
+                <span>Explorar</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
 
-<!-- card2 -->
-		<div class = 'flex flex-col justify-center bg-gray-400 w-[480px] h-[500px] rounded-[20px] mt-4 mb-4 '>
-			<a href="./Me-objects">
-				<div>  
-					img
-				</div>
-			</a>
-		<div>
-			<p>Aqui va el texto pequeño</p>
-		</div>
-	</div>
-
-<!-- card3 -->
-		<div class = 'flex  flex-col justify-center bg-gray-400 w-[480px] h-[500px] rounded-[20px] mt-4 mb-4 '>
-			<a href="./Day">
-				<div>  
-					img
-				</div>
-			</a>
-		<div>
-			<p>Aqui va el texto pequeño</p>
-		</div>
-	</div>
-		
-	</main>
-
-<!-- title -->
-	<div class = 'flex justify-center'>
-			<h2 class = 'text-6xl font-mono'>
-				My life, My Blog
-			</h2>
-	</div>
-</Layout>
+        <!-- Card 3 -->
+        <a href="/vista3" class="group">
+          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-teal-500/30 border border-gray-700">
+            <div class="h-64 overflow-hidden">
+              <img 
+                src="/images/imagen3.jpg" 
+                alt="Descripción de la imagen 3" 
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
+              <h2 class="text-2xl font-bold mb-3 text-teal-300 group-hover:text-teal-200">Título 3</h2>
+              <p class="text-gray-200">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.
+              </p>
+              <div class="mt-4 inline-flex items-center text-teal-300 group-hover:text-teal-200">
+                <span>Explorar</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
