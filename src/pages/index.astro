@@ -1,76 +1,78 @@
 ---
 import Layout from "../layouts/Layout.astro";
 --- 
-
-    <main class="w-full max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500 text-center h-[60px]">
-        My life, My blog.
-      </h1>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-center">
-        <!-- Card 1 -->
-        <a href="/Opposite" class="group">
-          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700 w-full max-w-[360px] mx-auto">
-            <div class="h-80 overflow-hidden">
-              <img 
-                src=" /images/beto.jpg" 
-                alt="Descripción de la imagen 1" 
-                class="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
-              <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">The Person opposite me.</h2>
-              <p class="text-gray-200">
-                He is my friend José, but we call him Beto. He is the opposite of me because he is very funny with everything he says and is always doing something, which is the opposite of me since I am very lazy
-              </p>
-              <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
-                </svg>
-              </div>
+<Layout>
+  
+  <main class="w-full max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-violet-500 text-center h-[60px]">
+      My life, My blog.
+    </h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-center">
+      <!-- Card 1 -->
+      <a href="/Opposite" class="group">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700 w-full max-w-[360px] mx-auto">
+          <div class="h-80 overflow-hidden">
+            <img 
+              src=" /images/beto.jpg" 
+              alt="Descripción de la imagen 1" 
+              class="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
+            <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">The Person opposite me.</h2>
+            <p class="text-gray-200">
+              He is my friend José, but we call him Beto. He is the opposite of me because he is very funny with everything he says and is always doing something, which is the opposite of me since I am very lazy
+            </p>
+            <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
+              </svg>
             </div>
           </div>
-        </a>
+        </div>
+      </a>
 
-        <!-- Card 2 -->
-        <a href="/Day" class="group">
-          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700 w-full max-w-[360px] mx-auto">
-            <div class="h-80 overflow-hidden">
-              <img 
-                src="/images/universidad.jpg" 
-                alt="Descripción de la imagen 1" 
-                class="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
-              <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">My storyTime.</h2>
-              <p class="text-gray-200">
-                In this storytime, I talk about my first day at university.
-                I tell how my first day was, what I thought was going to happen, and how nervous I felt about starting a new stage in my studies.
-              </p>
-              <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
-              </div>
+      <!-- Card 2 -->
+      <a href="/Day" class="group">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700 w-full max-w-[360px] mx-auto">
+          <div class="h-80 overflow-hidden">
+            <img 
+              src="/images/universidad.jpg" 
+              alt="Descripción de la imagen 1" 
+              class="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
+            <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">My storyTime.</h2>
+            <p class="text-gray-200">
+              In this storytime, I talk about my first day at university.
+              I tell how my first day was, what I thought was going to happen, and how nervous I felt about starting a new stage in my studies.
+            </p>
+            <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
             </div>
           </div>
-        </a>
+        </div>
+      </a>
 
-        <!-- Card 3 -->
-        <a href="/Me-objects" class="group">
-          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700 w-full max-w-[360px] mx-auto">
-            <div class="h-80 overflow-hidden">
-              <img 
-                src="/images/Me.jpg" 
-                alt="Descripción de la imagen 1" 
-                class="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
-              <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">Me in 3 things.</h2>
-              <p class="text-gray-200">
-                I’m going to explain myself using three things I use daily. These things represent important parts of my routine and help me in my day-to-day life. Through them, you’ll get to know a little more about me.
-              </p>
-              <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
-              </div>
+      <!-- Card 3 -->
+      <a href="/Me-objects" class="group">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/30 border border-gray-700 w-full max-w-[360px] mx-auto">
+          <div class="h-80 overflow-hidden">
+            <img 
+              src="/images/Me.jpg" 
+              alt="Descripción de la imagen 1" 
+              class="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-700">
+            <h2 class="text-2xl font-bold mb-3 text-sky-300 group-hover:text-sky-200">Me in 3 things.</h2>
+            <p class="text-gray-200">
+              I’m going to explain myself using three things I use daily. These things represent important parts of my routine and help me in my day-to-day life. Through them, you’ll get to know a little more about me.
+            </p>
+            <div class="mt-4 inline-flex items-center text-sky-300 group-hover:text-sky-200">
             </div>
           </div>
-        </a>
-      </div>
-    </main>
+        </div>
+      </a>
+    </div>
+  </main>
+</Layout>
