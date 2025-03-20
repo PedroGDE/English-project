@@ -1,32 +1,89 @@
----
-
----
-
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/src/styles/global.css" />
     <title>Opposite-Me</title>
+    <style>
+      body {
+        background-color: #111827; /* bg-gray-900 */
+        min-height: 100vh; /* min-h-screen */
+        font-family: sans-serif; /* font-sans */
+        color: #e5e7eb; /* text-gray-200 */
+      }
+      
+      main {
+        width: 100%; /* w-full */
+        max-width: 56rem; /* max-w-4xl */
+        margin-left: auto; /* mx-auto */
+        margin-right: auto; /* mx-auto */
+        padding: 4rem 1rem; /* py-16 px-4 */
+        display: flex; /* flex */
+        flex-direction: column; /* flex-col */
+        align-items: center; /* items-center */
+      }
+      
+      .back-button {
+        border: 1px solid white; /* border border-white */
+        width: 80px; /* w-[80px] */
+        cursor: pointer; /* cursor-pointer */
+        margin-bottom: 0.625rem; /* mb-2.5 */
+        font-size: 18px; /* text-[18px] */
+      }
+      
+      .card {
+        background-color: #1f2937; /* bg-gray-800 */
+        border-radius: 0.75rem; /* rounded-xl */
+        overflow: hidden; /* overflow-hidden */
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+        border: 1px solid #374151; /* border border-gray-700 */
+        width: 100%; /* w-full */
+        max-width: 600px; /* max-w-[600px] */
+        margin-left: auto; /* mx-auto */
+        margin-right: auto; /* mx-auto */
+      }
+      
+      .image-container {
+        height: 400px; /* h-[400px] */
+        overflow: hidden; /* overflow-hidden */
+      }
+      
+      .card-image {
+        width: 100%; /* w-full */
+        height: 100%; /* h-full */
+        object-fit: cover; /* object-cover */
+        object-position: top; /* object-top */
+        transition: all 0.5s; /* transition-all duration-500 */
+      }
+      
+      .card-image:hover {
+        transform: scale(1.05); /* hover:scale-105 */
+      }
+      
+      .card-content {
+        padding: 1.5rem; /* p-6 */
+      }
+      
+      .card-text {
+        color: #e5e7eb; /* text-gray-200 */
+        font-size: 1.125rem; /* text-lg */
+      }
+    </style>
   </head>
-  <body class="bg-gray-900 min-h-screen font-sans text-gray-200">
-    <main
-      class="w-full max-w-4xl mx-auto px-4 py-16 flex flex-col items-center"
-    >
-    <a href="/"><button  type="button" class=" border border-white w-[80px] cursor-pointer mb-2.5 text-[18px]"> Go Back</button></a>
-      <div
-        class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 w-full max-w-[600px] mx-auto"
-      >
-        <div class="h-[400px] overflow-hidden">
+  <body>
+    <main>
+      <a href="/"><button type="button" class="back-button">Go Back</button></a>
+      <div class="card">
+        <div class="image-container">
           <img
             src="/images/beto.jpg"
             alt="Descripción de la imagen"
-            class="w-full h-full object-cover object-top transition-all duration-500 hover:scale-105"
+            class="card-image"
           />
         </div>
-        <div class="p-6">
-          <p class="text-gray-200 text-lg">
-            He is my friend José Alberto, but everyone in our friend group calls him 'Beto.' I chose him as my opposite because he always makes everyone laugh, while I’m more of the person who just stays in the group to laugh. I don’t usually talk much; I have trouble speaking. I used to have speech problems when I was little, and it stuck with me.
+        <div class="card-content">
+          <p class="card-text">
+            He is my friend José Alberto, but everyone in our friend group calls him 'Beto.' I chose him as my opposite because he always makes everyone laugh, while I'm more of the person who just stays in the group to laugh. I don't usually talk much; I have trouble speaking. I used to have speech problems when I was little, and it stuck with me.
             I included him because he knows how to express himself very well, which is something I barely do because I get very nervous.
           </p>
         </div>
