@@ -1,7 +1,41 @@
 ---
-import Layout from "../layouts/Layout.astro";
+
 ---
 
-<Layout>
-    <h1>Hiiiii3</h1>
-</Layout>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <title>Opposite-Me</title>
+  </head>
+  <body class="bg-gray-900 min-h-screen font-sans text-gray-200">
+    <main
+      class="w-full max-w-4xl mx-auto px-4 py-16 flex flex-col items-center"
+    >
+    <a href="/"><button  type="button" class=" border border-white w-[80px] cursor-pointer mb-2.5 text-[18px]"> Regresar</button></a>
+      <div
+        class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 w-full max-w-[600px] mx-auto"
+      >
+      <div class="h-[400px] overflow-hidden">
+        <img
+            src="/images/Me.jpg"
+            alt="Descripción de la imagen"
+            class="w-full h-full object-contain transition-all duration-500 hover:scale-105"
+        />
+    </div>
+        <div class="p-6">
+          <p class="text-gray-200 text-lg mb-4">
+            I describe myself with my laptop because it is the main tool I use every day. As a web developer, I use my laptop to write code, research, and run my projects.
+          </p>
+          <p class="text-gray-200 text-lg mb-4">
+            I describe myself with my mobile phone since I use it daily to stay connected with my team, manage tasks, and check emails. Additionally, it helps me organize my schedule and stay updated with what’s happening around me.
+          </p>
+          <p class="text-gray-200 text-lg mb-4">
+            I describe myself with my desk because it’s my workspace. I spend long hours here focused, surrounded by everything I need to be productive, from my laptop to other accessories that make my day-to-day as a developer easier.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
